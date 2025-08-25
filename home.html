@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payoo|HOME</title>
     <link rel="shortcut icon" href="assets/Group.png" type="LogoPage">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- fontAwsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+
+
+<body class="bg-gradient-to-t from-blue-700 to-blue-100 h-[100vh]">
+    <div class=" min-h-[50px] flex justify-between items-center p-5 max-w-lg mx-auto border-b-1 border-blue-950">
+        <div class="flex">
+            <img class="h-[50px]" src="assets/Group.png" alt="">
+            <div class="ml-5">
+                <h1 class="font-bold"><span>$</span>45000</h1>
+                <p class="text-[#08080870] font-semibold">Available Balance</p>
+            </div>
+        </div>
+        <div>
+            <button type="submit" class="btn"><i class="fa-solid fa-arrow-up-from-bracket rotate-270"></i>Log Out</button>
+        </div>
+
+    </div>
+
 </body>
+
 </html>

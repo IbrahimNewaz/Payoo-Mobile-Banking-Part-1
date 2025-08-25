@@ -13,12 +13,9 @@ document.getElementById('btn-login')
         const pinNumberConvert = parseInt(pinNumberValue);
 
         if (mobileNumberConvert === mobileNumber && pinNumberConvert === pinNumber) {
-            console.log('All value is valid');
+            window.location.href="./home.html";
         }
         else {
             console.log('Invaild input');
         }
-
-
-
     })
