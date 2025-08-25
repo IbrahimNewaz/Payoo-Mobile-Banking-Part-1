@@ -21,17 +21,120 @@
 
 
 <body class="bg-gradient-to-t from-blue-700 to-blue-100 h-[100vh]">
-    <div class=" min-h-[50px] flex justify-between items-center p-5 max-w-lg mx-auto border-b-1 border-blue-950">
-        <div class="flex">
-            <img class="h-[50px]" src="assets/Group.png" alt="">
-            <div class="ml-5">
-                <h1 class="font-bold"><span>$</span>45000</h1>
-                <p class="text-[#08080870] font-semibold">Available Balance</p>
+
+    <div class="max-w-lg mx-auto bg-blue-50 rounded-b-2xl ">
+
+        <div class=" min-h-[50px] flex justify-between items-center p-5  border-b-1 border-blue-950 ">
+            <div class="flex">
+                <img class="h-[50px]" src="assets/Group.png" alt="">
+                <div class="ml-5">
+                    <h1 class="font-bold"><span>$</span> 45000</h1>
+                    <p class="text-[#08080870] font-semibold">Available Balance</p>
+                </div>
             </div>
+            <div>
+                <button class="btn text-[#08080870]"><i
+                        class="fa-solid fa-arrow-up-from-bracket rotate-270 text-gray-500"></i>Log Out</button>
+            </div>
+
         </div>
-        <div>
-            <button type="submit" class="btn"><i class="fa-solid fa-arrow-up-from-bracket rotate-270"></i>Log Out</button>
+
+
+        <div class="mt-5 p-10">
+            <h1 class="font-extrabold text-[25px]">🔥 Welcome to Payooo!</h1>
+            <p class="text-[#08080870] font-semibold">Enjoy easy and convenient financial services with us. <br> Cashout
+                charge
+                is low and</p>
         </div>
+
+        <div class=" min-h-[200px] grid grid-cols-3 gap-5 mt-5 mb-5 p-10">
+            <!-- card 1 -->
+            <div class="border-2 border-blue-500 text-center p-5 bg-blue-100   rounded-2xl">
+                <img class="mx-auto" src="assets/wallet1.png" alt="Wallet Logo">
+                <h2 class="text-[#08080870] font-semibold">Add Money</h2>
+            </div>
+
+            <!-- card 2 -->
+            <div class="border-2 border-blue-500 text-center p-5 bg-blue-100  rounded-2xl">
+                <img class="mx-auto" src="assets/send1.png" alt="Cashout Logo">
+                <h2 class="text-[#08080870] font-semibold">CashOut</h2>
+            </div>
+
+
+            <!-- card 3 -->
+            <div class="border-2 border-blue-500 text-center p-5 bg-blue-100  rounded-2xl">
+                <img class="mx-auto" src="assets/bonus1.png" alt="bonus Logo">
+                <h2 class="text-[#08080870] font-semibold">Get Bonus</h2>
+            </div>
+
+
+            <!-- card 4 -->
+            <div class="border-2 border-blue-500 text-center p-5 bg-blue-100  rounded-2xl">
+                <img class="mx-auto" src="assets/money1.png" alt="Transfer Logo">
+                <h2 class="text-[#08080870] font-semibold">Transfer</h2>
+            </div>
+
+            <!-- card 5 -->
+            <div class="border-2 border-blue-500 text-center p-5 bg-blue-100  rounded-2xl">
+                <img class="mx-auto" src="assets/purse1.png" alt="Pay Bill Logo">
+                <h2 class="text-[#08080870] font-semibold">Pay Bill</h2>
+            </div>
+
+
+            <!-- card 6 -->
+            <div class="border-2 border-blue-500 text-center p-5 bg-blue-100  rounded-2xl">
+                <img class="mx-auto" src="assets/transaction1.png" alt="Transactions Logo">
+                <h2 class="text-[#08080870] font-semibold">Transactions</h2>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- All Form Section -->
+    <div class="form-section max-w-lg mx-auto">
+        <!-- Add Money -->
+        <div class="mx-5">
+            <h1 class="font-bold text-[22px] text-[white]">Add Money</h1>
+            <form class=" bg-white rounded-2xl p-8 mt-5 border-2 border-blue-800">
+                <div class="mb-4">
+                    <h1 class="font-bold text-blue-900">Select A Bank</h1>
+                    <select class="select font-bold bg-blue-200 mt-3 rounded-3xl w-full">
+                        <option disabled selected>Pick a Bank</option>
+                        <option>Brack Bank</option>
+                        <option>City Bank</option>
+                        <option>DutchBangla Bank</option>
+                    </select>
+                </div>
+
+                <!-- Bank Account Number -->
+                <div class="mb-4">
+                    <label class="font-bold text-blue-900" for="">Bank Account Number</label>
+                    <br>
+                    <input type="text" placeholder="Enter 11 digit account number" id="ac-Number"
+                        class="input bg-blue-200 mt-3  rounded-3xl font-semibold w-full" />
+                </div>
+
+                <!-- Amount to Add -->
+                <div class="mb-4">
+                    <label class="font-bold text-blue-900" for="">Amount to Add</label>
+                    <br>
+                    <input type="text" placeholder="Add Amount to withdraw" id="add-Amount"
+                        class="input bg-blue-200 mt-3  rounded-3xl font-semibold w-full" />
+                </div>
+
+                <!-- Pin Number Enter 4 digit pin number -->
+                <div class="mb-4">
+                    <label class="font-bold text-blue-900" for="">Pin Number</label>
+                    <br>
+                    <input type="text" placeholder="Enter 4 Digit Pin Number" id="home-pinNumber"
+                    class="input bg-blue-200 mt-3  rounded-3xl font-semibold w-full" />
+                </div>
+
+                <button class="btn font-bold text-whit btn-active btn-primary mt-5 w-full rounded-3xl "
+                    id="btn-addMoney">AddMoney</button>
+            </form>
+        </div>
+
 
     </div>
 
