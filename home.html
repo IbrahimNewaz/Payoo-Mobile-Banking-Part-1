@@ -62,7 +62,7 @@
 
 
             <!-- card 3 -->
-            <div class="border-2 border-blue-500 text-center p-5 bg-blue-100  rounded-2xl">
+            <div id="bonus-btn" class="border-2 border-blue-500 text-center p-5 bg-blue-100  rounded-2xl">
                 <img class="mx-auto" src="assets/bonus1.png" alt="bonus Logo">
                 <h2 class="text-[#08080870] font-semibold">Get Bonus</h2>
             </div>
@@ -75,7 +75,7 @@
             </div>
 
             <!-- card 5 -->
-            <div class="border-2 border-blue-500 text-center p-5 bg-blue-100  rounded-2xl">
+            <div id="payBill-btn" class="border-2 border-blue-500 text-center p-5 bg-blue-100  rounded-2xl">
                 <img class="mx-auto" src="assets/purse1.png" alt="Pay Bill Logo">
                 <h2 class="text-[#08080870] font-semibold">Pay Bill</h2>
             </div>
@@ -166,8 +166,8 @@
                         class="input bg-blue-200 mt-3  rounded-3xl font-semibold w-full" />
                 </div>
 
-                <button class="btn font-bold text-whit btn-active btn-primary mt-5 w-full rounded-3xl "
-                    id="btn-addMoney">Withdraw Money</button>
+                <button  class="btn font-bold text-whit btn-active btn-primary mt-5 w-full rounded-3xl "
+                    id="btn-withdrawMoney">Withdraw Money</button>
 
             </form>
         </div>
@@ -203,7 +203,7 @@
                 </div>
 
                 <button class="btn font-bold text-whit btn-active btn-primary mt-5 w-full rounded-3xl "
-                    id="btn-addMoney">Send Now</button>
+                    id="btn-transferMoney">Send Now</button>
 
             </form>
 
@@ -211,8 +211,73 @@
         </div>
 
 
+        <!-- Get Bonus -->
+        <div id="getBonus-parent" class="mx-5">
+            <h1 class="font-bold text-[22px] text-[white]">Get Bonus</h1>
+            <form class=" bg-white rounded-2xl p-8 mt-5 border-2 border-blue-800">
 
+                <!-- Enter Bonus Coupon -->
+                <div class="mb-4">
+                    <label class="font-bold text-blue-900" for="">Enter Bonus Coupon</label>
+                    <br>
+                    <input type="text" placeholder="Enter your coupon" id="transfer-pinNumber"
+                        class="input bg-blue-200 mt-3  rounded-3xl font-semibold w-full" />
+                </div>
 
+                <button class="btn font-bold text-whit btn-active btn-primary mt-5 w-full rounded-3xl "
+                    id="btn-addMoney">Get
+                    Bonus</button>
+
+            </form>
+
+        </div>
+
+        <!-- Pay Bill "-->
+        <div id="payBill-parent" style="display: none;" class="mx-5">
+            <h1 class="font-bold text-[22px] text-[white]">Select To Pay</h1>
+            <form class=" bg-white rounded-2xl p-8 mt-5 border-2 border-blue-800">
+                <div class="mb-4">
+                    <h1 class="font-bold text-blue-900">Select A Bank</h1>
+                    <select id="paybill-Bank" class="select font-bold bg-blue-200 mt-3 rounded-3xl w-full">
+                        <option disabled selected>Pick a Bank</option>
+                        <option>Brack Bank</option>
+                        <option>City Bank</option>
+                        <option>DutchBangla Bank</option>
+                    </select>
+                </div>
+
+                <!-- Biller Account Number -->
+                <div class="mb-4">
+                    <label class="font-bold text-blue-900" for="">Biller Account Number</label>
+                    <br>
+                    <input type="text" placeholder="Enter 11 digit Biller Account Number" id="Billerac-Number"
+                        class="input bg-blue-200 mt-3  rounded-3xl font-semibold w-full" />
+                </div>
+
+                <!-- Amount to Add -->
+                <div class="mb-4">
+                    <label class="font-bold text-blue-900" for="">Amount to Add</label>
+                    <br>
+                    <input type="text" placeholder="Add Amount to Pay" id="bill-Amount"
+                        class="input bg-blue-200 mt-3  rounded-3xl font-semibold w-full" />
+                </div>
+
+                <!-- Pin Number Enter 4 digit pin number -->
+                <div class="mb-4">
+                    <label class="font-bold text-blue-900" for="">Pin Number</label>
+                    <br>
+                    <input type="text" placeholder="Enter 4 Digit Pin Number" id="pay-pinNumber"
+                        class="input bg-blue-200 mt-3  rounded-3xl font-semibold w-full" />
+                </div>
+
+                <button class="btn font-bold text-whit btn-active btn-primary mt-5 w-full rounded-3xl "
+                    id="btn-addMoney">Pay Now</button>
+
+            </form>
+
+        </div>
+
+        <!-- form section ends in here -->
     </div>
 
     <!-- Add Js file Payoo home -->
