@@ -28,5 +28,19 @@ document.getElementById('btn-addMoney')
         const NewcurentBalance = addAmount + currentBalance;
         document.getElementById('Balance').innerText = NewcurentBalance;
 
-
     })
+
+
+    // toggling feature //
+
+document.getElementById('addmoney-btn')
+.addEventListener('click' , function(){
+    document.getElementById('cashout-parent').style.display = 'none';
+    document.getElementById('addmoney-parent').style.display = 'block';
+})
+
+document.getElementById('cashout-btn')
+.addEventListener('click' , function(){
+    document.getElementById('addmoney-parent').style.display = 'none';
+    document.getElementById('cashout-parent').style.display = 'block';
+})
