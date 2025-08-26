@@ -64,6 +64,32 @@ document.getElementById('btn-withdrawMoney')
         document.getElementById('Balance').innerText = NewcurentBalance;
     })
 
+
+// get bonus btn activet //
+document.getElementById('btn-bonusMoney')
+    .addEventListener('click', function (e) {
+        e.preventDefault(); //for stoping form refreshing //
+
+        const couPon = 676869;
+        const bonus = 1000;
+
+        // Selecting user input //
+        const luckyCoupon = parseInt(document.getElementById('coupon-Number').value);
+
+
+        // account number checking //
+        if (luckyCoupon.length <6 && luckyCoupon !== couPon) {
+            alert("Please Provide Valid Coupon Number")
+            return;
+        }
+
+        // Balance deposit transaction //
+        // for cash out money //
+        const currentBalance = parseInt(document.getElementById('Balance').innerText);
+        const NewcurentBalance = currentBalance + bonus;
+        document.getElementById('Balance').innerText = NewcurentBalance;
+    })
+
 // for transfer cash btn activet //
 document.getElementById('btn-transferMoney')
     .addEventListener('click', function (e) {
@@ -95,6 +121,43 @@ document.getElementById('btn-transferMoney')
         const NewcurentBalance = currentBalance - transferAmount;
         document.getElementById('Balance').innerText = NewcurentBalance;
     })
+
+// btn-payBill for pay bill btn activet //
+document.getElementById('btn-payBill')
+    .addEventListener('click', function (e) {
+        e.preventDefault(); //for stoping form refreshing //
+
+        const PinNumber = 7378;
+
+        // Selecting user input //
+        const payBillBank = document.getElementById('paybill-Bank').value;
+        const BilleracNumber = document.getElementById('BillerAC-Number').value;
+        const billAmount = parseInt(document.getElementById('bill-Amount').value);
+        const payPinNumber = parseInt(document.getElementById('pay-pinNumber').value);
+
+        // account number checking //
+        if (BilleracNumber.length < 11) {
+            alert("Please Provide Valid Account Number")
+            return;
+        }
+
+        // pin number checking //
+        if (payPinNumber != PinNumber) {
+            alert("Invalid Pin Number")
+            return;
+        }
+
+
+        // Balance deposit transaction //
+        // for pay bill money //
+        const currentBalance = parseInt(document.getElementById('Balance').innerText);
+        const NewcurentBalance = currentBalance - billAmount;
+        document.getElementById('Balance').innerText = NewcurentBalance;
+    })
+
+
+
+
 
 // toggling feature //
 // add money //
