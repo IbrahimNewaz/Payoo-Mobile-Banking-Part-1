@@ -36,11 +36,21 @@ document.getElementById('btn-addMoney')
 document.getElementById('addmoney-btn')
 .addEventListener('click' , function(){
     document.getElementById('cashout-parent').style.display = 'none';
+    document.getElementById('transfer-parent').style.display = 'none';
     document.getElementById('addmoney-parent').style.display = 'block';
 })
 
 document.getElementById('cashout-btn')
 .addEventListener('click' , function(){
     document.getElementById('addmoney-parent').style.display = 'none';
+    document.getElementById('transfer-parent').style.display = 'none';
     document.getElementById('cashout-parent').style.display = 'block';
 })
+
+document.getElementById('transfer-btn')
+.addEventListener('click', function(){
+    document.getElementById('addmoney-parent').style.display = 'none';
+    document.getElementById('cashout-parent').style.display = 'none';
+    document.getElementById('transfer-parent').style.display = 'block';
+})
+
